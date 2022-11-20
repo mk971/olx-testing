@@ -36,7 +36,7 @@ class SVVTProjectTesting {
 		webDriver.close();
 	}
 
-	/*@Test
+	@Test
 	void mobileAppTest() throws InterruptedException {
 		webDriver.manage().window().maximize();
 		baseUrl="http://www.olx.ba";
@@ -122,7 +122,7 @@ class SVVTProjectTesting {
 		registerBtn.click();
 		Thread.sleep(10000);	
 		WebElement confirmation=webDriver.findElement(By.xpath("/html/body/div[4]/h1"));
-		assertTrue(confirmation.getText().contains("Za poèetak vam preporuèujemo da:"));
+		assertTrue(confirmation.getText().contains("Za poï¿½etak vam preporuï¿½ujemo da:"));
 		Thread.sleep(4000);
 	}
 	
@@ -146,9 +146,9 @@ class SVVTProjectTesting {
 		
 	}
 	
-	*/
 	
-	/*@Test
+	
+	@Test
 	void CarTest() throws InterruptedException {
 		
 		
@@ -196,8 +196,7 @@ class SVVTProjectTesting {
 
 		
 	}
-*/
-	/*
+	
 	@Test
 	void personalInfo() throws InterruptedException 
 	
@@ -229,7 +228,7 @@ class SVVTProjectTesting {
 		Thread.sleep(2000);
 		WebElement surname=webDriver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div/form/div[2]/input"));
 		surname.clear();
-		surname.sendKeys("Adiæ");
+		surname.sendKeys("Adiï¿½");
 		Thread.sleep(2000);
 		Select canton=new Select(webDriver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div/form/div[3]/div/span/select")));
 		canton.selectByIndex(3);
@@ -252,12 +251,12 @@ class SVVTProjectTesting {
 		button.click();
 		Thread.sleep(4000);
 		WebElement confirmation=webDriver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div/div[1]"));
-		assertEquals("Uspješno ste izmijenili postavke.", confirmation.getText());
+		assertEquals("Uspjeï¿½no ste izmijenili postavke.", confirmation.getText());
 	}
 	
-	*/
 	
-	/*
+	
+	
 	@Test
 	void SavedArticlesTest() throws InterruptedException
 	
@@ -292,8 +291,8 @@ class SVVTProjectTesting {
 		WebElement savedPhone=webDriver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div[2]/div/div[1]/a/p"));
 		assertEquals("Samsung galaxy j7", savedPhone.getText());
 	}
-	*/
-	/*
+	
+	
 	@Test
 	void changePassword() throws InterruptedException {
 		
@@ -329,8 +328,8 @@ class SVVTProjectTesting {
 		assertEquals("https://www.olx.ba/", webDriver.getCurrentUrl());
 		
 	}
-	*/
-	/*
+	
+	
 	@Test
 	
 	void blockUser() throws InterruptedException {
@@ -365,7 +364,7 @@ class SVVTProjectTesting {
 		assertEquals("ADOBAX", user.getText());
 		
 	}
-	*/
+	
 	
 	
 	
